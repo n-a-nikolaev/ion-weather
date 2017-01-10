@@ -23,12 +23,19 @@ $font-path: "../assets/fonts";
 // colors so you can add, rename and remove colors as needed.
 // The "primary" color is the only required color in the map.
 
+$primary-color:     #292929;
+$secondary-color:   #fc6a42;
+$danger-color:      #fd4f27;
+$light-color:       #f4f4f4;
+$dark-color:        #222;
+
 $colors: (
-  primary:    #387ef5,
-  secondary:  #32db64,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222
+  primary:      $primary-color, 
+  secondary:    $secondary-color, 
+  danger:       $danger-color,
+  light:        $light-color,
+  dark:         $dark-color,
+  transparent:  transparent   
 );
 
 
@@ -70,9 +77,17 @@ $colors: (
 
 @import "ionicons";
 
+$font-family-base: "Ubuntu" !default;
+$font-family-md-base: "Ubuntu" !default;
+$font-family-ios-base: "Ubuntu" !default;
+$font-family-wp-base: "Ubuntu" !default;
 
-// Fonts
-// --------------------------------------------------
+$dark-background-color: #292929;
+$dark-text-color: #fff;
 
-@import "roboto";
-@import "noto-sans";
+$light-background-color: #E8E7EC;
+$light-text-color: #1e212a;
+
+
+@import 'app.dark.scss';
+@import 'app.light.scss';
